@@ -104,7 +104,7 @@
         width: 100%;
         padding: 1rem;
         height: 9rem;
-        gap: 1.5rem;
+        gap: 1rem;
     }
     .week{
         flex-direction: row;
@@ -116,17 +116,11 @@
     .hour,
     .min,
     .dot {
-        font-size: 3rem;
+        font-size: 5rem;
     }
 }
 @media only screen and (max-width: 440px) {
-
-    .hour,
-    .min,
-    .dot{
-        font-size: 3rem;
-    }
     .week{
-        font-size: 15px;
+        font-size: 18px;
     }
 }
