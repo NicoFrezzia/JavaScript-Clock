@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');body{
+    background-color: black;
+    font-family: "Orbitron", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.digital-clock{
+    color: white;
+    display: flex;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 2rem;
+    border: 0.5rem solid #2d2d2d;
+    align-items: center;
+    width: 50rem;
+    max-width: 650px;
+}
+
+.week{
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    gap: .4rem;
+    color: #2d2d2d;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 4rem 0 0;
+    
+}
+
+.week .highlight{
+    color: white;
+}
+
+.hour, .min, .dot{
+    display: inline-block;
+    font-size: 9rem;
+}
+
+.min {
+    display: inline-block;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/**************** RESPONSIVE  ***************/
+
+@media only screen and (max-width: 900px){
+    .hour,.min,.dot {
+            font-size: 8rem;
+        }
+}
+
+@media only screen and (max-width: 820px) {
+    .hour,
+    .min,
+    .dot {
+        font-size: 7rem;
+    }
+}
+@media only screen and (max-width: 750px) {
+
+    .hour,
+    .min,
+    .dot {
+        font-size: 6rem;
+    }
+}
+@media only screen and (max-width: 680px) {
+
+    .hour,
+    .min,
+    .dot {
+        font-size: 5rem;
+    }
+}
+@media only screen and (max-width: 610px) {
+
+    .hour,
+    .min,
+    .dot {
+        font-size: 4.5rem;
+    }
+}
+@media only screen and (max-width: 570px) {
+
+    .hour,
+    .min,
+    .dot {
+        font-size: 3.5rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .digital-clock{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 1rem;
+        height: 9rem;
+        gap: 1.5rem;
+    }
+    .week{
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 0.5rem;
+        padding: 0;
+    }
+    .hour,
+    .min,
+    .dot {
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 440px) {
+
+    .hour,
+    .min,
+    .dot{
+        font-size: 3rem;
+    }
+    .week{
+        font-size: 15px;
+    }
+}
